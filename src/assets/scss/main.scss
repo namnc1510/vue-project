@@ -2,3 +2,8 @@
 @use 'reset';
 @use 'button';
 @use 'responsive';
+
+html, body {
+  height: auto;
+  overflow-y: auto;
+}

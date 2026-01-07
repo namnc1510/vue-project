@@ -137,7 +137,7 @@ onBeforeUnmount(() => {
 
   &.primary {
     background-color: variables.$secondary-color;
-    color: variables.$primary-color;
+    color: variables.$white ;
 
     &:hover {
       background-color: #5ab3d0;
