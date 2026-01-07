@@ -1,0 +1,35 @@
+@use 'variables';
+
+.btn {
+  display: inline-block;
+  padding: 0.7rem 2.3rem;
+  font-size: 18px;
+  font-weight: 700;
+  color: variables.$white;
+  border: 2px solid variables.$white;
+  background-color: transparent;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: variables.$secondary-color;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+    z-index: -1;
+  }
+
+  &:hover::before {
+    transform: translateX(0);
+  }
+
+  &:hover {
+    color: variables.$primary-color;
+  }
+}
